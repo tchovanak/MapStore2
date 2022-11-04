@@ -714,14 +714,6 @@ function annotations(state = {validationErrors: {}}, action) {
             });
         }
         return state;
-    case HIGHLIGHT_POINT: {
-        return !action.point ?
-            {...state, clickPoint: null, showMarker: false} :
-            assign({}, state, {
-                clickPoint: {latlng: {lat: action.point.lat, lng: action.point.lon }},
-                showMarker: true
-            });
-    }
     case CHANGE_FORMAT: {
         return {...state, format: action.format};
     }

@@ -82,7 +82,9 @@ export default {
             "name": "CRSSelector",
             "cfg": {
                 "additionalCRS": {
-
+                    "EPSG:5514": {
+                      "label": "Monte Mario"
+                    }
                 },
                 "filterAllowedCRS": [
                     "EPSG:4326",

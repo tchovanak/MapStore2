@@ -32,7 +32,8 @@ import {
     SET_CURRENT_EDIT_FEATURE_QUERY,
     SET_MAP_TRIGGER,
     SET_SHOW_IN_MAP_POPUP,
-    INIT_PLUGIN
+    INIT_PLUGIN,
+    CLICK_POINT
 } from '../actions/mapInfo';
 
 import { MAP_CONFIG_LOADED } from '../actions/config';
@@ -296,6 +297,12 @@ function mapInfo(state = initState, action) {
             itemId: action.itemId || null,
             overrideParams: action.overrideParams || null,
             filterNameList: action.filterNameList || null
+        });
+    }
+    case CLICK_POINT: {
+        return assign({}, state, {
+            clickPoint: action.point,
+            showMarker: true
         });
     }
     case CHANGE_MAPINFO_FORMAT: {

@@ -76,9 +76,10 @@ class Selector extends React.Component {
                 list.push({value: crs});
             }
         }
+    
         const currentCRS = normalizeSRS(this.props.selected, this.props.filterAllowedCRS);
         const compatibleCrs = ['EPSG:4326', 'EPSG:3857', 'EPSG:900913'];
-        const allowedLayerTypes = ["wms", "osm", "tileprovider", "empty"];
+        const allowedLayerTypes = ["wms", "osm", "tileprovider", "empty", "wmts"];
         const changeCrs = (crs) => {
             if ( indexOf(compatibleCrs, crs) > -1 || indexOf(allowedLayerTypes, this.props.currentBackground.type) > -1 ||
             (this.props.currentBackground.allowedSRS && has(this.props.currentBackground.allowedSRS, crs))) {
@@ -95,6 +96,7 @@ class Selector extends React.Component {
                 });
             }
         };
+        
         const isAllowed = includes(this.props.allowedRoles, "ALL") || includes(this.props.allowedRoles, this.props.currentRole);
         return (this.props.enabled && isAllowed ? <Dropdown
             dropup

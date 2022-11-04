@@ -351,7 +351,11 @@
           "EPSG:4326",
           "EPSG:3857"
         ],
-        "additionalCRS": {}
+        "additionalCRS": {
+          "EPSG:5514": {
+            "label": "Monte Mario"
+          }
+        }
       }
     },
     {
@@ -361,13 +365,14 @@
       "description": "plugins.CRSSelector.description",
       "dependencies": ["MapFooter"],
       "defaultConfig": {
-        "additionalCRS": {},
+        "additionalCRS": {
+          "EPSG:5514": {
+            "label": "Monte Mario"
+          }
+      },
         "filterAllowedCRS": [
           "EPSG:4326",
           "EPSG:3857"
-        ],
-        "allowedRoles": [
-          "ADMIN"
         ]
       }
     },
