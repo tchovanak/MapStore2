@@ -97,8 +97,6 @@ class Selector extends React.Component {
             }
         };
         
-        changeCrs(currentCRS)
-
         const isAllowed = includes(this.props.allowedRoles, "ALL") || includes(this.props.allowedRoles, this.props.currentRole);
         return (this.props.enabled && isAllowed ? <Dropdown
             dropup
