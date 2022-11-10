@@ -672,7 +672,7 @@
             "tooltip": "Vybrať pozadie"
         },
         "info":{
-            "tooltip": "Query objects on map"
+            "tooltip": "Identifikácia objektov na mape"
         },
         "expandtoolbar": {
             "tooltip": "Rozbaliť / zabaliť"
