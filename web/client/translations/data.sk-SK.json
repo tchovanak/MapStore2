@@ -385,7 +385,7 @@
             "resource": {
                 "deleteResource": "Odstrániť",
                 "editResource": "Upraviť vlastnosti",
-                "editResourceData": "Edit resource data",
+                "editResourceData": "Editovať vlastnosti",
                 "addToFeatured": "Pridať do popredia",
                 "removeFromFeatured": "Odstrániť z popredia",
                 "showDetails": "Ukázať detaily"
@@ -642,18 +642,18 @@
             }
         },
         "print":{
-            "paneltitle": "Print",
+            "paneltitle": "Tlač",
             "layout": "Rozloženie",
-            "sheetsize": "Sheet size:",
+            "sheetsize": "Veľkosť hárku:",
             "legendoptions": "Možnosti nastavenia legendy",
-            "submit": "Print",
+            "submit": "Tlačiť",
             "title": "Názov",
             "titleplaceholder": "Zadaj názov...",
             "description": "Popis",
             "descriptionplaceholder": "Zadaj popis...",
             "resolution": "Rozlíšenie:",
             "defaultBackground": "Použiť podklad OSM ako pozadie",
-            "printtooltip": "Print",
+            "printtooltip": "Tlač",
             "alternatives": {
                 "legend": "Zahrnúť legendu",
                 "2pages": "Legenda na samostatnej stránke",
@@ -667,9 +667,11 @@
                 "iconsSize": "Veľkosť ikon:",
                 "dpi": "Dpi:"
             },
-            "layoutWarning": "Nepovolené rozloženie"
+            "layoutWarning": "Nepovolené rozloženie",
+            "includeScale": "Zahrnúť mierku",
+            "graticule": "Pridať mriežku"
         },
-        "backgroundSwither":{
+        "backgroundSwitcher":{
             "tooltip": "Vybrať pozadie"
         },
         "info":{
@@ -680,9 +682,9 @@
         },
         "getFeatureInfoTitle": "Informácie o funkcii",
         "identifyTitle": "Informácie o funkcii",
-        "identifyNoQueryableLayers": "No active queryable layer",
+        "identifyNoQueryableLayers": "Neexistuje dopytovateľná vrstva.",
         "identifyRevGeocodeHeader": "Súradnice",
-        "identifyZoomToFeature": "Priblížiť ku funkcii",
+        "identifyZoomToFeature": "Priblížiť ku",
         "identifyStopHighlightingFeatures": "Nezvýrazňovať funkcie",
         "identifyHighlightFeatures": "Zvýrazniť funkcie",
         "identifyShowCoordinateEditor": "Zobraziť editor súradníc",
@@ -2769,7 +2771,7 @@
             "title": "Pozícia myši"
           },
           "Print": {
-            "description": "Allows to print the current map with legend",
+            "description": "Umožňuje tlač mapy s legendou",
             "title": "Print Tool"
           },
           "Save": {
