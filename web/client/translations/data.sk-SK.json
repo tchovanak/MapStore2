@@ -416,7 +416,7 @@
                 "newGeostory": "Nová GeoStory",
                 "title": "GeoStories ({count})",
                 "titleNoCount": "GeoStories",
-                  "create": "Vytvoriť GeoStory",
+                "create": "Vytvoriť GeoStory",
                 "noGeostoryAvailable": "Nie je k dispozícii žiadna GeoStory",
                 "createANewOne": "Vytvoriť novú GeoStory",
                 "deleteError": "Nastala chyba pri odstraňovaní GeoStory",
